@@ -1,0 +1,264 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    color: #2E2F42;
+}
+
+.list {
+    list-style-type: none;
+}
+
+.link {
+    font-style: normal;
+}
+
+.accent {
+    color: #4D5AE5;
+}
+
+:root {
+    /* for different entitys registered its own variable for convenient modification*/
+    --second-color: #434455;
+
+    --filter-bg-color: #F4F4FD;
+    --filter-border-color: #E7E9FC;
+    --filter-color-action: #FFFFFF;
+    --filter-bg-color-hover: #404BBF;
+    --filter-bg-color-focus: #4D5AE5;
+
+    --address-text-focus: #4D5AE5;
+
+    --footer-logo-color: #F4F4FD;
+    --footer-bgcolor: #2E2F42;
+    --footer-text-color: #E7E9FC;
+
+    --hero-bgcolor: #2E2F42;
+    --hero-title-color: #FFFFFF;
+    --hero-button-bg: #4D5AE5;
+
+    --our-team-bg: #F4F4FD;
+
+    --section-title-color: #2E2F42;
+    --section-text-color: #434455;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* -----Navigation----- */
+
+.nav>.nav-list>.nav-item {
+    /* used inheritance here,
+        because all parameters are similar,
+        but can be easily modified in the future */
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: currentColor;
+}
+
+.nav-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: currentColor;
+    text-decoration: none;
+}
+
+.nav-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--second-color);
+}
+
+/* -----Navigation Address----- */
+
+.address>.address-list>.address-item> {
+    /* the same as nav */
+
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: currentColor;
+}
+
+.address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: currentColor;
+}
+
+.address-link:hover {
+    color: var(--second-color);
+}
+
+.address-link:focus {
+    color: var(--address-text-focus);
+}
+
+/* -----Filter----- */
+
+.filter>.filter-list>.filter-item>.filter-btn {
+    /* the same as nav */
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filter-btn {
+    background-color: var(--filter-bg-color);
+    border: 1px solid: var(var(--filter-border-color));
+}
+
+.filter-btn:hover {
+    color: var(--filter-color-action);
+    background-color: var(--filter-bg-color-hover);
+}
+
+.filter-btn:focus {
+    color: var(--filter-color-action);
+    background-color: var(--filter-bg-color-focus);
+}
+
+/* -----Gallery----- */
+
+.gallery>.gallery-list>.gallery-item {
+    /* the same as nav, no needed parameters cause inherited from body */
+}
+
+.gallery-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.gallery-subtitle {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--second-color);
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    width: 264px;
+    white-space: normal;
+    color: var(--footer-text-color);
+}
+
+.footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--footer-logo-color);
+}
+
+.footer-bgcolor {
+    background-color: var(--footer-bgcolor);
+}
+
+.hero {
+    width: 1440px;
+    height: 600px;
+    left: 0px;
+    top: 72px;
+    background-color: var(--hero-bgcolor);
+}
+
+.hero-title {
+    position: absolute;
+    width: 494px;
+    height: 120px;
+    left: 473px;
+    top: 260px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    white-space: normal;
+    color: var(--hero-title-color);
+}
+
+.hero-button {
+    position: relative;
+    width: 169px;
+    height: 56px;
+    left: 636px;
+    top: 428px;
+    border-radius: 4px;
+    background-color: var(--hero-button-bg);
+}
+
+.advantages>.advantages-list>.advantages-item {
+    /* the same as nav, no needed parameters cause inherited from body */
+}
+
+.advantages-subtitle,
+.team-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--section-title-color);
+}
+
+.advantages-text,
+.team-text {
+    width: 264px;
+    height: 72px;
+    white-space: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--section-text-color);
+}
+
+.we-doing>.we-doing-list>.we-doing-item {
+    /* the same as nav, no needed parameters cause inherited from body */
+}
+
+.we-doing-title,
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--section-title-color);
+}
+
+.team {
+    background-color: var(--our-team-bg);
+}
+
+.team-item > .team-subtitle, .team-item > .team-text{
+    text-align: none, center;
+}
