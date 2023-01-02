@@ -10,38 +10,12 @@ body {
 
 .link {
     font-style: normal;
+    text-decoration: none;
 }
 
 .accent {
-    color: #4D5AE5;
+    color: var(--brand-color);
 }
-
-:root {
-    /* for different entitys registered its own variable for convenient modification*/
-    --second-color: #434455;
-
-    --filter-bg-color: #F4F4FD;
-    --filter-border-color: #E7E9FC;
-    --filter-color-action: #FFFFFF;
-    --filter-bg-color-hover: #404BBF;
-    --filter-bg-color-focus: #4D5AE5;
-
-    --address-text-focus: #4D5AE5;
-
-    --footer-logo-color: #F4F4FD;
-    --footer-bgcolor: #2E2F42;
-    --footer-text-color: #E7E9FC;
-
-    --hero-bgcolor: #2E2F42;
-    --hero-title-color: #FFFFFF;
-    --hero-button-bg: #4D5AE5;
-
-    --our-team-bg: #F4F4FD;
-
-    --section-title-color: #2E2F42;
-    --section-text-color: #434455;
-}
-
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -83,7 +57,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--second-color);
+    color: currentColor;
 }
 
 /* -----Navigation Address----- */
@@ -101,15 +75,17 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: currentColor;
+    color: var(--text-color);
 }
 
 .address-link:hover {
-    color: var(--second-color);
+    color: var(--text-color);
+    text-decoration: solid;
 }
 
 .address-link:focus {
-    color: var(--address-text-focus);
+    color: var(--brand-color);
+    text-decoration: solid;
 }
 
 /* -----Filter----- */
@@ -126,8 +102,9 @@ body {
 }
 
 .filter-btn {
-    background-color: var(--filter-bg-color);
-    border: 1px solid: var(var(--filter-border-color));
+    background-color: var(--light-color);
+    border: 1px solid; 
+    color: var(--accent-color);
 }
 
 .filter-btn:hover {
