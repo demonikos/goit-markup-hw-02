@@ -4,6 +4,17 @@ body {
     color: #2E2F42;
 }
 
+:root {
+    --dark-color: #2E2F42;
+    --brand-color: #4D5AE5;
+    --text-color: #434455;
+    --subtext-color: #8E8F99;
+    --white-color: #FFFFFF;
+    --light-color: #F4F4FD;
+    --accent-color: #E7E9FC;
+    --click-color: #404BBF;
+}
+
 .list {
     list-style-type: none;
 }
@@ -16,6 +27,7 @@ body {
 .accent {
     color: var(--brand-color);
 }
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -31,15 +43,24 @@ body {
 
 /* -----Navigation----- */
 
-.nav>.nav-list>.nav-item {
-    /* used inheritance here,
-        because all parameters are similar,
-        but can be easily modified in the future */
+.nav>.nav-list {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: currentColor;
+}
+
+.nav-item {
+    color: var(--dark-color);
+}
+
+.nav-item:hover,
+.nav-item:focus {
+    color: var(--text-color);
+}
+
+.nav-item:active {
+    color: var(--brand-color)
 }
 
 .nav-logo {
@@ -103,18 +124,18 @@ body {
 
 .filter-btn {
     background-color: var(--light-color);
-    border: 1px solid; 
+    border: 1px solid;
     color: var(--accent-color);
 }
 
 .filter-btn:hover {
-    color: var(--filter-color-action);
-    background-color: var(--filter-bg-color-hover);
+    color: var(--white-color);
+    background-color: var(--click-color);
 }
 
 .filter-btn:focus {
-    color: var(--filter-color-action);
-    background-color: var(--filter-bg-color-focus);
+    color: var(--white-color);
+    background-color: var(--brand-color);
 }
 
 /* -----Gallery----- */
@@ -134,7 +155,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--second-color);
+    color: var(--text-color);
 }
 
 .footer-text {
@@ -143,7 +164,7 @@ body {
     letter-spacing: 0.02em;
     width: 264px;
     white-space: normal;
-    color: var(--footer-text-color);
+    color: var(--accent-color);
 }
 
 .footer-logo {
@@ -154,11 +175,11 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-decoration: none;
-    color: var(--footer-logo-color);
+    color: var(--light-color);
 }
 
 .footer-bgcolor {
-    background-color: var(--footer-bgcolor);
+    background-color: var(--dark-color);
 }
 
 .hero {
@@ -166,7 +187,7 @@ body {
     height: 600px;
     left: 0px;
     top: 72px;
-    background-color: var(--hero-bgcolor);
+    background-color: var(--dark-color);
 }
 
 .hero-title {
@@ -181,7 +202,7 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     white-space: normal;
-    color: var(--hero-title-color);
+    color: var(--white-color);
 }
 
 .hero-button {
@@ -191,7 +212,7 @@ body {
     left: 636px;
     top: 428px;
     border-radius: 4px;
-    background-color: var(--hero-button-bg);
+    background-color: var(--brand-color);
 }
 
 .advantages>.advantages-list>.advantages-item {
@@ -204,7 +225,7 @@ body {
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--section-title-color);
+    color: var(--dark-color);
 }
 
 .advantages-text,
@@ -214,7 +235,7 @@ body {
     white-space: normal;
     font-size: 16px;
     line-height: 1.5;
-    color: var(--section-text-color);
+    color: var(--text-color);
 }
 
 .we-doing>.we-doing-list>.we-doing-item {
@@ -229,13 +250,14 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: var(--section-title-color);
+    color: var(--dark-color);
 }
 
 .team {
-    background-color: var(--our-team-bg);
+    background-color: var(--light-color);
 }
 
-.team-item > .team-subtitle, .team-item > .team-text{
+.team-item>.team-subtitle,
+.team-item>.team-text {
     text-align: none, center;
 }
