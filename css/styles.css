@@ -238,7 +238,7 @@ body {
     color: var(--text-color);
 }
 
-.we-doing>.we-doing-list>.we-doing-item {
+.we-doing> .we-doing-list> .we-doing-item {
     /* the same as nav, no needed parameters cause inherited from body */
 }
 
