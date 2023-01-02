@@ -129,8 +129,12 @@ body {
 }
 
 .filter-btn:active {
+    background-color: var(--brand-color);
+    color: var(--white-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
+
+/* -----Gallery----- */
 
 .gallery-title {
     font-weight: 500;
@@ -145,6 +149,8 @@ body {
     letter-spacing: 0.02em;
     color: var(--text-color);
 }
+
+/* -----Footer----- */
 
 .footer-text {
     font-size: 16px;
@@ -201,11 +207,23 @@ body {
     top: 428px;
     border-radius: 4px;
     background-color: var(--brand-color);
+    color: var(--white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.advantages>.advantages-list>.advantages-item {
-    /* the same as nav, no needed parameters cause inherited from body */
+.hero-button:hover,
+.hero-button:focus,
+.filter-btn:hover,
+.filter-btn:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+
+.hero-button:active {
+    background-color: var(--click-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* -----Advantages----- */
 
 .advantages-subtitle,
 .team-subtitle {
@@ -226,9 +244,7 @@ body {
     color: var(--text-color);
 }
 
-.we-doing>.we-doing-list>.we-doing-item {
-    /* the same as nav, no needed parameters cause inherited from body */
-}
+/* -----We doing----- */
 
 .we-doing-title,
 .team-title {
@@ -240,6 +256,8 @@ body {
     text-transform: capitalize;
     color: var(--dark-color);
 }
+
+/* -----Our Team----- */
 
 .team {
     background-color: var(--light-color);
