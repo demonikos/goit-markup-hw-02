@@ -41,22 +41,6 @@ body {
 
 /* -----Navigation----- */
 
-.nav>.nav-list {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-
-.nav-item {
-    color: var(--dark-color);
-}
-
-.nav-item:hover,
-.nav-item:focus {
-    color: var(--action-color);
-}
-
 .nav-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -68,11 +52,20 @@ body {
     text-decoration: none;
 }
 
-.nav-link {
+.nav-list>.nav-item.nav-link {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: currentColor;
+}
+
+.nav-link {
+    color: var(--dark-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--action-color)
 }
 
 /* -----Navigation Address----- */
@@ -171,6 +164,8 @@ body {
 }
 
 .hero-title {
+    width: 496px;
+    height: 120px;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
@@ -221,7 +216,6 @@ body {
 
 .we-doing-title,
 .team-title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
